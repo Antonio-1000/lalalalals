@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% block title%}
+maquinaria
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='maquinaria.css')}}">
+    <body>
+        <section class="form-register">
+            <h4>maquinaria</h4>
+            <form action=""   method="post">
+                <label for="id_maquinaria">id_maquinaria
+                    <input type="text" name="id_maquinaria">
+                </label>
+                <br>
+                <br>
+                <label for="nombre">nombre
+                    <input type="text" name="nombre">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="modelo">modelo
+                    <input type="text" name="modelo">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="peso">peso
+                    <input type="text" name="peso">
+                </label>
+                <br>
+                <br>
+                <label for="tamañp">tamaño
+                    <input type="text" name="tamaño">
+                </label>
+                
+                <br>
+                <br>
+                
+                <input type="submit" name="" id="" value="Guardar">
+          </form>
+
+</center>
+
+{%endblock%}

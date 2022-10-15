@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla inventarios
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>clave_inv</th>
+        <th>id_maquinaria</th>
+        <th>id_prove</th>
+        <th>id_sumin</th>
+        <th>id_mate</th>
+        
+    </tr>
+<h1>Tablas inventario</h1>
+{% for inven in inven %}
+<tr>
+    <td>{{inven.clave_inv}}</td>
+    <td>{{inven.id_maquinaria}}</td>
+    <td>{{inven.id_prove}}</td>
+    <td>{{inven.id_sumin}}</td>
+    <td>{{inven.id_mate}}</td>
+    
+
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

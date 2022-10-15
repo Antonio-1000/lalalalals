@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block title%}
+suministros
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='suministros.css')}}">
+    <body>
+        <section class="form-register">
+            <h4>suministros</h4>
+            <form action=""   method="post">
+                <label for="id_sumin">id_sumin
+                    <input type="text" name="id_sumin">
+                </label>
+                <br>
+                <br>
+                <label for="nombre">nombre
+                    <input type="text" name="nombre">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="precio">precio
+                    <input type="text" name="precio">
+                </label>
+                <br>
+                <br>
+                
+               
+                <input type="submit" name="" id="" value="Guardar">
+            </form>
+
+</center>
+
+{%endblock%}

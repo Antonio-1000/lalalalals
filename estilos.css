@@ -1,0 +1,4 @@
+body{
+    background: url(/static/inicio.jpg);
+    transition: .5s;
+}

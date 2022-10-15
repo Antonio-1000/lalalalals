@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+{% block title%}
+empleados
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='empleado.css')}}"><body>
+    <section class="form-register">
+        <h4>Registro Empleados</h4>
+        <form action=""   method="post">
+			<label for="id_emple">id_emple
+                <input type="text" name="id_emple">
+            </label>
+            <br>
+            <br>
+            <label for="nombre">nombre
+                <input type="text" name="nombre">
+            </label>
+            <br>
+            <br>
+            <label for
+            ="numero">numero
+                <input type="text" name="numero">
+            </label>
+            <br>
+            <br>
+            <label for
+            ="edad">edad
+                <input type="text" name="edad">
+            </label>
+            <br>
+            <br>
+            <label for
+            ="puesto">puesto
+                <input type="text" name="puesto">
+            </label>
+            <br>
+            <br>
+            <label for="curp">curp
+                <input type="correo" name="curp">
+            </label>
+            <br>
+            <br>
+            <label for="password">password
+                <input type="correo" name="password">
+            </label>
+            <br>
+            <br>
+            
+            <input type="submit" name="" id="" value="Guardar">
+        </form>
+        <h3>{{error}}</h3>
+</center>
+
+{%endblock%}

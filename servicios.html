@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block title%}
+servicios
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='servicios.css')}}">
+    <body>
+        <section class="form-register">
+            <h4>servicios</h4>
+            <form action=""   method="post">
+                <label for="clave_ser">clave_ser
+                    <input type="text" name="clave_ser">
+                </label>
+                <br>
+                <br>
+                <label for="clave_servicio">nombre_servicio
+                    <input type="text" name="nombre_servicio">
+                </label>
+                <br>
+                <br>
+                <label for="precio">precio
+                    <input type="text" name="precio">
+                </label>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <input type="submit" name="" id="" value="Guardar">
+            </form>
+
+</center>
+
+{%endblock%}

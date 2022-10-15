@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block title
+    inventario
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='inventario.css')}}">
+    <body>
+        <section class="form-register">
+            <h4>Inventario</h4>
+            <form action=""   method="post">
+                <label for="clave_inv">clave_inv
+                    <input type="text" name="clave_inv">
+                </label>
+                <br>
+                <br>
+                <label for="id_maquinaria">id_maquinaria
+                    <input type="text" name="id_maquinaria">
+                </label>
+                <br>
+                <br>
+                <label for="id_prove">id_prove
+                    <input type="text" name="id_prove">
+                </label>
+                <br>
+                <br>
+                <label for="id_sumin">id_sumin
+                    <input type="text" name="id_sumin">
+                </label>
+                <br>
+                <br>
+                <label for="id_mate">id_mate
+                    <input type="text" name="id_mate">
+                </label>
+                <br>
+                <br>
+               
+                <input type="submit" name="" id="" value="Guardar">
+            </form>
+<h3>{{error}}</h3>
+</center>
+
+{%endblock%}

@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+{% block title%}
+producto
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='producto.css')}}">
+    <body>
+        <section class="form-register">
+            <h4>producto</h4>
+            <form action=""   method="post">
+                <label for="id_produ">id_produ
+                    <input type="text" name="id_produ">
+                </label>
+                <br>
+                <br>
+                <label for="marca">marca
+                    <input type="text" name="marca">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="prenda">prenda
+                    <input type="text" name="prenda">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="material">material
+                    <input type="text" name="material">
+                </label>
+                <br>
+                <br>
+                <label for="color">color
+                    <input type="text" name="color">
+                </label>
+                <br>
+                <br>
+                <label for="precio">precio
+                    <input type="text" name="precio">
+                </label>
+                <br>
+                <br>
+                
+                <label for="cantidad">cantidad
+                    <input type="text" name="cantidad">
+                </label>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <label for="kilos">ropa por kilo(kilos)
+                    <input type="text" name="cantidad">
+                </label>
+                <br>
+                <br>
+                <input type="submit" name="" id="" value="Guardar">
+            </form>
+
+</center>
+
+{%endblock%}

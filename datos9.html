@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla nota
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>folio</th>
+        <th>fecha</th>
+        <th>precio_total</th>
+        <th>fecha_entrega</th>
+        <th>id_produ</th>
+        <th>id_emple</th>
+        <th>clave_cli</th>
+        <th>clave_ser</th>
+        
+    </tr>
+<h1>Tablas nota</h1>
+{% for nota in nota %}
+<tr>
+    <td>{{nota.folio}}</td>
+    <td>{{nota.fecha}}</td>
+    <td>{{nota.precio_total}}</td>
+    <td>{{nota.fecha_entrega}}</td>
+    <td>{{nota.id_produ}}</td>
+    <td>{{nota.id_emple}}</td>
+    <td>{{nota.clave_cli}}</td>
+    <td>{{nota.clave_ser}}</td>
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

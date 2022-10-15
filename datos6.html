@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla empleados
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>id_maquinaria</th>
+        <th>nombre</th>
+        <th>modelo/th>
+        <th>peso</th>
+        <th>tamaño</th>
+        
+    </tr>
+<h1>Tablas maquinaria</h1>
+{% for maqui in maqui %}
+<tr>
+    <td>{{maqui.id_maquinaria}}</td>
+    <td>{{maqui.nombre}}</td>
+    <td>{{maqui.modelo}}</td>
+    <td>{{maqui.peso}}</td>
+    <td>{{maqui.tamaño}}</td>
+
+{% endfor %}
+</table>
+{%endblock%}

@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla materiales
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>id_mate</th>
+        <th>nombre</th>
+        <th>cantidad</th>
+        <th>precio</th>
+        
+    </tr>
+<h1>Tablas materiales</h1>
+{% for mate in mate %}
+<tr>
+    <td>{{mate.id_mate}}</td>
+    <td>{{mate.nombre}}</td>
+    <td>{{mate.cantidad}}</td>
+    <td>{{mate.precio}}</td>
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

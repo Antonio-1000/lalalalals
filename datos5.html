@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla empleados
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>id_prove</th>
+        <th>nombre</th>
+        <th>telefono</th>
+        <th>direccion</th>
+        
+    </tr>
+<h1>Tablas provedores</h1>
+{% for provedores in provedores %}
+<tr>
+    <td>{{provedores.id_prove}}</td>
+    <td>{{provedores.nombre}}</td>
+    <td>{{provedores.telefono}}</td>
+    <td>{{provedores.direccion}}</td>
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

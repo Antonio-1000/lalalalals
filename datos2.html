@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla persona
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>id_produ</th>
+        <th>marca</th>
+        <th>prenda</th>
+        <th>material</th>
+        <th>color</th>
+        <th>precio</th>
+        <th>cantidad</th>  
+        <th>kilo</th>  
+
+    </tr>
+<h1>Tablas producto</h1>
+{% for productos in productos %}
+<tr>
+    <td>{{productos.id_produ}}</td>
+    <td>{{productos.marca}}</td>
+    <td>{{productos.prenda}}</td>
+    <td>{{productos.material}}</td>
+    <td>{{productos.color}}</td>
+    <td>{{productos.precio}}</td>
+    <td>{{productos.cantidad}}</td>
+    <td>{{productos.kilo}}</td>
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla servicios
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>clave_ser</th>
+        <th>nombre_servicio</th>
+        <th>precio</th>
+        
+    </tr>
+<h1>Tablas servicios</h1>
+{% for servicio in servicio %}
+<tr>
+    <td>{{servicio.clave_ser}}</td>
+    <td>{{servicio.nombre_servicio}}</td>
+    <td>{{servicio.precio}}</td>
+    
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla persona
+{% endblock%}
+{% block section %}
+<table>
+    <tr>
+        <th>clave_cli</th>
+        <th>nombre</th>
+        <th>apellido</th>
+        <th>direccion</th>
+        <th>correo</th>
+        <th>telefono</th>
+        <th>password</th>
+
+    </tr>
+<h1>Tablas cliente</h1>
+{% for usuario in usuarios %}
+<tr>
+    <td>{{usuario.clave_cli}}</td>
+    <td>{{usuario.nombre}}</td>
+    <td>{{usuario.apellido}}</td>
+    <td>{{usuario.direccion}}</td>
+    <td>{{usuario.correo}}</td>
+    <td>{{usuario.telefono}}</td>
+    <td>{{usuario.password}}</td>
+</tr>
+{% endfor %}
+</table>
+{%endblock%}

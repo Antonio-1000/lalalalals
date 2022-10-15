@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% block title%}
+provedores
+{% endblock%}
+{% block section %}
+<center>
+    <link rel="stylesheet" href="{{url_for('static', filename='provedores.css')}}">
+    <body>
+        <section class="form-register">
+            <h4>provedores</h4>
+            <form action=""   method="post">
+                <label for="id_prove">id_prove
+                    <input type="text" name="id_prove">
+                </label>
+                <br>
+                <br>
+                <label for="nombre">nombre
+                    <input type="text" name="nombre">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="telefono">telefono
+                    <input type="text" name="telefono">
+                </label>
+                <br>
+                <br>
+                <label for
+                ="direccion">direccion
+                    <input type="text" name="direccion">
+                </label>
+                <br>
+                <br>
+               
+                <input type="submit" name="" id="" value="Guardar">
+            </form>
+
+</center>
+
+{%endblock%}

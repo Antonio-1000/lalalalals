@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla empleados
+{% endblock%}
+{% block section %}
+<br><a href='inicio3'>Regresar(Menu Principal)</a>
+<table class="default">
+    <tr>
+        <th>id_emple</th>
+        <th>nombre</th>
+        <th>edad</th>
+        <th>numero</th>
+        <th>puesto</th>
+        <th>curp</th>
+        <th>password</th>
+        
+    </tr>
+<h1>Tabla Empleados</h1>
+{% for empleados in empleados %}
+<tr>
+    <td>{{empleados.id_emple}}</td>
+    <td>{{empleados.nombre}}</td>
+    <td>{{empleados.edad}}</td>
+    <td>{{empleados.numero}}</td>
+    <td>{{empleados.puesto}}</td>
+    <td>{{empleados.curp}}</td>
+    <td>{{empleados.password}}</td>
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

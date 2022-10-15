@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% block title%}
+Datos de la tabla suministros
+{% endblock%}
+{% block section %}
+<table class="default">
+    <tr>
+        <th>id_sumin</th>
+        <th>nombre</th>
+        <th>precio</th>
+        
+    </tr>
+<h1>Tablas suministros</h1>
+{% for sumin in sumin %}
+<tr>
+    <td>{{sumin.id_sumin}}</td>
+    <td>{{sumin.nombre}}</td>
+    <td>{{sumin.precio}}</td>
+    
+</tr>
+
+{% endfor %}
+</table>
+{%endblock%}

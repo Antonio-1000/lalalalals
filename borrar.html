@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block title%}
+Borrar Datos en Nota
+{% endblock%}
+{% block section %}
+<link rel="stylesheet" href="{{url_for('static', filename='borrar.css')}}">
+<form action="" method="post">
+    <label for="folio">Ingresa Id a borrar
+        <input type="text" name="folio">
+    </label>
+    <br>
+    <input type="submit" name="" id="" value="Borrar">
+</form>
+
+{%endblock%}
